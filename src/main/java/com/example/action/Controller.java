@@ -17,6 +17,6 @@ public class Controller {
 
     @GetMapping("/ping")
     public ResponseEntity<String> ping() {
-        return ResponseEntity.ok("response");
+        return ResponseEntity.ok("response!");
     }
 }
