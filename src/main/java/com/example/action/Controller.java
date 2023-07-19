@@ -12,5 +12,9 @@ public class Controller {
     public ResponseEntity<String> ping(HttpServletRequest httpServletRequest) {
         return ResponseEntity.ok(httpServletRequest.getRemoteAddr());
     }
+    @GetMapping("/ping2")
+    public ResponseEntity<String> ping2(HttpServletRequest httpServletRequest) {
+        return ResponseEntity.ok(HttpUtils.getRemoteIp(httpServletRequest));
+    }
 
 }
