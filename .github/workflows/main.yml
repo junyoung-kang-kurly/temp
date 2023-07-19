@@ -63,7 +63,7 @@ jobs:
         uses: Jtalk/url-health-check-action@v3.1
         with:
           # Check the following URLs one by one sequentially
-          url: http://ec2-3-39-233-74.ap-northeast-2.compute.amazonaws.com:8080/ping
+          url: https://ec2-13-125-120-130.ap-northeast-2.compute.amazonaws.com:8080/ping
           # Follow redirects, or just report success on 3xx status codes
           #follow-redirect: false # Optional, defaults to "false"
           # Fail this action after this many failed attempts
